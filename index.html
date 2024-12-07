@@ -115,29 +115,34 @@
         }
 
         /* Styling untuk navigasi responsive */
-        @media (max-width: 1024px) {
+        @media (max-width: 768px) {
             .promo-item {
                 flex-direction: column;
             }
 
-            .header {
-                font-size: 1.2em;
+            .promo-text, .promo-img {
+                text-align: center;
                 padding: 10px;
             }
+        }
 
-            .header-left {
-                display: flex;
+        /* Responsif hanya untuk foto dan promosi */
+        @media (max-width: 600px) {
+            .promo-item {
                 flex-direction: column;
-                align-items: center;
             }
 
-            .logo {
-                width: 80px;
+            .promo-img img {
+                max-width: 100%;
+                height: auto;
             }
 
-            .hero-image img {
-                object-fit: cover;
-                height: 60vh;
+            .promo-text h2 {
+                font-size: 1.5em;
+            }
+
+            .promo-text p {
+                font-size: 1em;
             }
         }
     </style>
@@ -147,12 +152,12 @@
     <div class="header">
         <div class="header-left">
             <img src="logo osis.jpg" alt="Logo" class="logo">
-            <h1>LAZCREVAL WEBSITE </h1>
+            <h1>LAZCREVAL WEBSITE</h1>
         </div>
         <div class="nav-buttons">
-            <a href="index.html">halaman utama</a>
-            <a href="page1.html">apa itu lazcreval?</a>
-            <a href="bantuaan.html" target="_blank">Bantuan permasalahan</a>
+            <a href="OSIS.html">Halaman Utama</a>
+            <a href="page1.html">Apa itu lazcreval?</a>
+            <a href="bantuaan.html" target="_blank">Bantuan Permasalahan</a>
         </div>
     </div>
 
@@ -180,7 +185,7 @@
             </div>
             <div class="promo-text">
                 <h2>LAZCREVAL vibe and shine it's your prime</h2>
-                <p>nah ini adalah penampilan dari sekolah lain nah kalian tau tidak kenapa sekolah lain ikut menampilan kan bakat nya?</p>
+                <p>nah ini adalah penampilan dari sekolah lain nah kalian tau tidak kenapa sekolah lain ikut menampilkan bakat nya?</p>
             </div>
         </div>
 
@@ -202,7 +207,7 @@
             </div>
             <div class="promo-text">
                 <h2>LAZCREVAL vibe and shine it's your prime</h2>
-                <p>nah kalian tau tidak siapa sih? yang memiliki ide untuk membuat acara LAZCREVAL? .</p>
+                <p>nah kalian tau tidak siapa sih? yang memiliki ide untuk membuat acara LAZCREVAL?</p>
             </div>
         </div>
 
@@ -274,8 +279,8 @@
     </div>
 
     <div class="footer">
-        <p>Terima Kasih atas kunjungan Anda! website masih beta dan pembuatan sendiri jadi mohon maaf jika ada kesalahan</p>
-        <p>karya Aalvaro emranadirga 7 Algebra informasi lebih ada di apa itu lazcreval? dan untuk bantuan ada di bantuan permasalahan</p>
+        <p>Terima Kasih atas kunjungan Anda! Website masih beta dan pembuatan sendiri jadi mohon maaf jika ada kesalahan</p>
+        <p>Karya Aalvaro Emranadirga 7 Algebra, informasi lebih ada di 'Apa itu lazcreval?' dan untuk bantuan ada di 'Bantuan Permasalahan'.</p>
     </div>
 
 </body>
