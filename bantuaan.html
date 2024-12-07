@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bantuaan</title>
+    <style>
+        /* Mengatur tampilan halaman */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3e5f5; /* Latar belakang ungu muda */
+            color: #4a148c; /* Warna teks ungu */
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header untuk logo, judul, dan tombol navigasi */
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px;
+            background-color: #6a1b9a;
+            color: #ffffff;
+            font-size: 1.5em;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 10;
+        }
+
+        .header-left {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo {
+            width: 80px;
+            height: auto;
+            margin-right: 15px;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 1.2em;
+        }
+
+        /* Styling tombol navigasi */
+        .nav-buttons a {
+            text-decoration: none;
+            color: #ffffff;
+            background-color: #8e24aa;
+            padding: 8px 16px;
+            border-radius: 5px;
+            font-size: 0.9em;
+        }
+
+        .nav-buttons a:hover {
+            background-color: #ab47bc;
+        }
+
+        /* Kotak konten utama */
+        .content-box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 90%;
+            max-width: 800px;
+            background-color: #e1bee7; /* Latar belakang ungu terang */
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+            margin: 100px auto; /* Spasi di bawah header */
+            text-align: center;
+        }
+
+        /* Gambar dan teks di dalam kotak */
+        .content-image {
+            width: 100%;
+            max-width: 500px;
+            border-radius: 15px;
+            margin-bottom: 20px;
+        }
+
+        .content-text {
+            font-size: 1.3em;
+            color: #4a148c;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header dengan logo, judul, dan tombol navigasi -->
+    <div class="header">
+        <div class="header-left">
+            <img src="logo osis.jpg" alt="Logo" class="logo">
+            <h1>Bantuaan permasalah</h1>
+        </div>
+        <div class="nav-buttons">
+            <a href="index.html">halaman utama</a> <!-- Link kembali ke halaman utama -->
+            <a href="bantuaan.html" target="_blank">Bantuan permasalah</a>
+        </div>
+    </div>
+
+    <!-- Konten utama dengan kotak berisi foto dan tulisan -->
+    <div class="content-box">
+        <img src="coming soon.jpeg" alt="Iklan Page 1" class="content-image">
+        <p class="content-text">
+            jika ada permasalahan atau saran untuk LAZCREVAL tahun depan bisa tulis di kertas yang sudah tersedia thx jika ada saran untuk saya sendiri juga boleh
+        </p>
+    </div>
+
+</body>
+</html>
