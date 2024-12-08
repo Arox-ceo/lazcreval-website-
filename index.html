@@ -9,13 +9,6 @@
     <title>Halaman Utama - Promo Spesial</title>
 
     <style>
-        /* Reset CSS */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
         body {
             font-family: Arial, sans-serif;
             background-color: #f3e5f5;
@@ -24,7 +17,6 @@
             padding: 0;
         }
 
-        /* Header */
         .header {
             display: flex;
             align-items: center;
@@ -32,12 +24,11 @@
             padding: 10px 20px;
             background-color: #6a1b9a;
             color: #ffffff;
-            font-size: 1.2em;
+            font-size: 1.5em;
             position: fixed;
             top: 0;
             width: 100%;
             z-index: 10;
-            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
         }
 
         .header-left {
@@ -46,13 +37,14 @@
         }
 
         .logo {
-            width: 50px;
+            width: 100px;
             height: auto;
-            margin-right: 10px;
+            margin-right: 15px;
         }
 
         .header h1 {
-            font-size: 1em;
+            margin: 0;
+            font-size: 1.2em;
         }
 
         .nav-buttons a {
@@ -62,19 +54,17 @@
             padding: 8px 16px;
             border-radius: 5px;
             margin-left: 5px;
-            font-size: 0.9em;
         }
 
         .nav-buttons a:hover {
             background-color: #ab47bc;
         }
 
-        /* Hero Image */
+        /* Hero image besar */
         .hero-image {
             width: 100%;
-            height: calc(100vh - 60px);
+            height: 100vh;
             overflow: hidden;
-            margin-top: 60px;
         }
 
         .hero-image img {
@@ -83,9 +73,8 @@
             object-fit: cover;
         }
 
-        /* Promotion Section */
         .promotion-container {
-            padding: 20px;
+            padding: 120px 20px;
         }
 
         .promo-item {
@@ -104,15 +93,6 @@
             padding: 20px;
         }
 
-        .promo-text h2 {
-            font-size: 1.8em;
-        }
-
-        .promo-text p {
-            font-size: 1em;
-            line-height: 1.6;
-        }
-
         .promo-img {
             flex: 1;
             padding: 20px;
@@ -121,68 +101,54 @@
         .promo-img img {
             width: 100%;
             height: auto;
-            object-fit: cover;
             max-width: 500px;
+            object-fit: cover;
         }
 
-        /* Footer */
         .footer {
             text-align: center;
             padding: 20px;
             background-color: #6a1b9a;
             color: #ffffff;
-            font-size: 1em;
+            font-size: 1.2em;
             margin-top: 40px;
         }
 
-        /* Responsiveness */
+        /* Styling untuk navigasi responsive */
         @media (max-width: 768px) {
-            .header {
-                flex-direction: column;
-                text-align: center;
-            }
-
             .promo-item {
                 flex-direction: column;
             }
 
             .promo-text, .promo-img {
-                padding: 10px;
                 text-align: center;
+                padding: 10px;
+            }
+        }
+
+        /* Responsif hanya untuk foto dan promosi */
+        @media (max-width: 600px) {
+            .promo-item {
+                flex-direction: column;
+            }
+
+            .promo-img img {
+                max-width: 100%;
+                height: auto;
             }
 
             .promo-text h2 {
                 font-size: 1.5em;
             }
-        }
-
-        @media (max-width: 480px) {
-            .header h1 {
-                font-size: 0.9em;
-            }
-
-            .nav-buttons a {
-                font-size: 0.8em;
-                padding: 6px 12px;
-            }
-
-            .promo-text h2 {
-                font-size: 1.3em;
-            }
 
             .promo-text p {
-                font-size: 0.9em;
-            }
-
-            .logo {
-                width: 40px;
+                font-size: 1em;
             }
         }
     </style>
 </head>
 <body>
 
-    <!-- Header -->
     <div class="header">
         <div class="header-left">
             <img src="logo osis.jpg" alt="Logo" class="logo">
@@ -195,14 +161,13 @@
         </div>
     </div>
 
-    <!-- Hero Image -->
+    <!-- Foto besar di awal -->
     <div class="hero-image">
         <img src="foto besar.jpeg" alt="Foto Besar Promosi">
     </div>
 
-    <!-- Promotion Section -->
     <div class="promotion-container">
-        <!-- Repeatable Promo Items -->
+        <!-- Promo Item 1 -->
         <div class="promo-item">
             <div class="promo-img">
                 <img src="foto 1.jpeg" alt="Promo 1">
@@ -212,10 +177,107 @@
                 <p>halo guys selamat datang di LAZCREVAL WEBSITE, web ini di buat untuk mengenal apa sih itu LAZCREVAL!!!</p>
             </div>
         </div>
-        <!-- Add more promo items as needed -->
+
+        <!-- Promo Item 2 -->
+        <div class="promo-item">
+            <div class="promo-img">
+                <img src="foto 2.jpeg" alt="Promo 2">
+            </div>
+            <div class="promo-text">
+                <h2>LAZCREVAL vibe and shine it's your prime</h2>
+                <p>nah ini adalah penampilan dari sekolah lain nah kalian tau tidak kenapa sekolah lain ikut menampilkan bakat nya?</p>
+            </div>
+        </div>
+
+        <!-- Promo Item 3 -->
+        <div class="promo-item">
+            <div class="promo-img">
+                <img src="foto 3.jpeg" alt="Promo 3">
+            </div>
+            <div class="promo-text">
+                <h2>LAZCREVAL vibe and shine it's your prime</h2>
+                <p>karena LAZCREVAL adalah acara yang bisa membuat tali pertemanan dengan sekolah lain!</p>
+            </div>
+        </div>
+
+        <!-- Promo Item 4 -->
+        <div class="promo-item">
+            <div class="promo-img">
+                <img src="foto 4.jpeg" alt="Promo 4">
+            </div>
+            <div class="promo-text">
+                <h2>LAZCREVAL vibe and shine it's your prime</h2>
+                <p>nah kalian tau tidak siapa sih? yang memiliki ide untuk membuat acara LAZCREVAL?</p>
+            </div>
+        </div>
+
+        <!-- Promo Item 5 -->
+        <div class="promo-item">
+            <div class="promo-img">
+                <img src="foto 5.jpeg" alt="Promo 5">
+            </div>
+            <div class="promo-text">
+                <h2>LAZCREVAL vibe and shine it's your prime</h2>
+                <p>nah acara LAZCREVAL itu di buat dan di urus oleh osis lazuardi gcs</p>
+            </div>
+        </div>
+
+        <!-- Promo Item 6 -->
+        <div class="promo-item">
+            <div class="promo-img">
+                <img src="foto 7.jpeg" alt="Promo 6">
+            </div>
+            <div class="promo-text">
+                <h2>LAZCREVAL vibe and shine it's your prime</h2>
+                <p>nah kita juga berkolaborasi bersama berbagai sekolah loh!</p>
+            </div>
+        </div>
+
+        <!-- Promo Item 7 -->
+        <div class="promo-item">
+            <div class="promo-img">
+                <img src="foto 8.jpeg" alt="Promo 7">
+            </div>
+            <div class="promo-text">
+                <h2>LAZCREVAL vibe and shine it's your prime</h2>
+                <p>SMP Prestasi Global (Tampilan: Band dan Design Hasil Karya Siswa)</p>
+            </div>
+        </div>
+
+        <!-- Promo Item 8 -->
+        <div class="promo-item">
+            <div class="promo-img">
+                <img src="foto 9.jpeg" alt="Promo 8">
+            </div>
+            <div class="promo-text">
+                <h2>LAZCREVAL vibe and shine it's your prime</h2>
+                <p>SMP Ar Rahman (Tampilan: Storytelling, solvoc, band)</p>
+            </div>
+        </div>
+
+        <!-- Promo Item 9 -->
+        <div class="promo-item">
+            <div class="promo-img">
+                <img src="foto 10.jpeg" alt="Promo 9">
+            </div>
+            <div class="promo-text">
+                <h2>LAZCREVAL vibe and shine it's your prime</h2>
+                <p>SMP An Nahl (Tampilan: Speech)</p>
+            </div>
+        </div>
+
+        <!-- Promo Item 10 -->
+        <div class="promo-item">
+            <div class="promo-img">
+                <img src="foto 100.jpeg" alt="Promo 10">
+            </div>
+            <div class="promo-text">
+                <h2>LAZCREVAL vibe and shine it's your prime</h2>
+                <p>SMP MWS (Tampilan: Band)</p>
+            </div>
+        </div>
     </div>
 
-    <!-- Footer -->
     <div class="footer">
         <p>Terima Kasih atas kunjungan Anda! Website masih beta dan pembuatan sendiri jadi mohon maaf jika ada kesalahan</p>
         <p>Karya Aalvaro Emranadirga 7 Algebra, informasi lebih ada di 'Apa itu lazcreval?' dan untuk bantuan ada di 'Bantuan Permasalahan'.</p>
